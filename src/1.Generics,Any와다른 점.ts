@@ -12,9 +12,9 @@ function helloNumber(message: number): number {
 function anyFn(msg: any): any {
   return msg;
 }
-//사용하면 ?
+//any 사용하면 ?
 console.log(anyFn("hello").length);
-console.log(anyFn(39).length); //undifined
+console.log(anyFn(39).length); //undifined 숫자형엔 length를 사용할수없기때문
 
 function helloGeneric<T>(message: T): T {
   return message;
